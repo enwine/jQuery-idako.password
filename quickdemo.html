@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing machine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.idako-password {	
+				clear: both;
+			}
+			.idako-password input {
+				float: left;
+				border: 1px solid #696969;
+				line-height: 16px;
+			}
+			.idako-password-bullets {
+				float: left;
+			}
+			.idako-password-bullet {
+				width: 10px;
+				height: 10px;
+				content: '.';
+				color: #000;
+				float: left;
+				border: 1px solid #696969;
+				margin: 6px 2px;
+			}
+			.idako-password-validation {
+				clear: both;
+			}
+			.idako-password-validation ul {
+				list-style: none;
+				padding: 0;
+				color: rgb(200, 100, 50);
+			}
+		</style>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+		<input type="password" name="myPass" id="myPass">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="jQuery-idako.password.dev.js"></script>
+    <script>
+			$(document).ready(function(){
+				$('#myPass').idkpass({
+					displayBullets: true
+				});
+			});
+		</script>
+  </body>
+</html>
